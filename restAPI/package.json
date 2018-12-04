@@ -1,0 +1,19 @@
+{
+  "name": "restapi",
+  "version": "1.0.0",
+  "description": "restAPI",
+  "main": "handler.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "zubin aka zeuscoder",
+  "license": "ISC",
+  "devDependencies": {
+    "serverless-dynamodb-local": "^0.2.35",
+    "serverless-offline": "^3.31.3"
+  },
+  "dependencies": {
+    "aws-sdk": "^2.369.0",
+    "uuid": "^3.3.2"
+  }
+}
