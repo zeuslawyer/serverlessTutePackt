@@ -22,8 +22,8 @@ provider:
   runtime: nodejs8.10
 
 # you can overwrite defaults here
-#  stage: dev
-#  region: us-east-1
+  stage: dev
+  region: us-east-1
 
 # you can add statements to the Lambda function's IAM Role here
 #  iamRoleStatements:
@@ -38,7 +38,7 @@ provider:
 #        Fn::Join:
 #          - ""
 #          - - "arn:aws:s3:::"
-#            - "Ref" : "ServerlessDeploymentBucket"
+#             - "Ref" : "ServerlessDeploymentBucket"
 #            - "/*"
 
 # you can define service wide environment variables here
@@ -102,3 +102,8 @@ functions:
 #     NewOutput:
 #       Description: "Description for the output"
 #       Value: "Some output value"
+
+plugins:
+  - serverless-dynamodb-local  #db needs to be loaded FIRST
+  - serverless-offline
+  
