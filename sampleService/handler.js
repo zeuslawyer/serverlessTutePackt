@@ -1,12 +1,13 @@
 "use strict";
 
-const axios = require("axios");
+// const axios = require("axios");
+const { fetchUsers } = require("./APIs/axios");
 
-const URL = "http://jsonplaceholder.typicode.com/users";
+// const URL = "http://jsonplaceholder.typicode.com/users";
 
 module.exports.hello = async (event, context, callback) => {
-
-  const res = await axios.get(URL);
+  // const res = await axios.get(URL);
+  const res = await fetchUsers();
 
   const response = {
     statusCode: 200,
