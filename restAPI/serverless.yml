@@ -104,6 +104,9 @@ functions:
 #       Value: "Some output value"
 
 plugins:
-  - serverless-dynamodb-local  #db needs to be loaded FIRST
+#db needs to be loaded FIRST
+# dont forget to run sls dynamodb install in the terminal...
+# and check with sls dynamodb start to see if it serves shell locally
+  - serverless-dynamodb-local  
   - serverless-offline
   
