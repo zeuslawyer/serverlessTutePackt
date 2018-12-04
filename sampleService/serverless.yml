@@ -63,7 +63,7 @@ functions:
 #    Check the event documentation for details
     events:
     - http:
-        path: /hello_function/test
+        path: /hello_function
         method: get
 #        cors: true
     # s3: ${env:BUCKET}
