@@ -3,7 +3,14 @@
 const uuid = require("uuid");
 const AWS = require("aws-sdk");
 
-const dynamoDb = AWS.DynamoDB.DocumentClient({});
+/*
+dynamoDB config for DEVELOPMENT VERSION ONLY.
+REMOVE/ change when deploying prod version
+*/
+const dynamoDb = AWS.DynamoDB.DocumentClient({
+  region: "localhost",
+  endpoint: "http://localhost:8000"
+});
 
 module.exports.hello = async (event, context) => {
   return {
