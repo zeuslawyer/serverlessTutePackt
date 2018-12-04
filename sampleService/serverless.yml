@@ -63,9 +63,9 @@ functions:
 #    Check the event documentation for details
     events:
     - http:
-        path: hello_function
+        path: /hello_function/test
         method: get
-        cors: true
+#        cors: true
     # s3: ${env:BUCKET}
 #      - schedule: rate(10 minutes)
 #      - sns: greeter-topic
@@ -103,3 +103,5 @@ functions:
 #     NewOutput:
 #       Description: "Description for the output"
 #       Value: "Some output value"
+plugins:
+  - serverless-offline

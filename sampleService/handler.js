@@ -4,7 +4,7 @@ module.exports.hello = async (event, context) => {
   return {
     statusCode: 200,
     body: JSON.stringify({
-      message: "CHANGED THIS PART! Your function executed successfully!",
+      message: "CHANGED THIS PART, YO! Your function executed successfully!",
       input: event
     })
   };
