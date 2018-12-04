@@ -68,7 +68,7 @@ resources:
 custom:
   dynamodb:
     start:
-      port: 8000
+      port: 8800
       inMemory: true    # run db in memory, not taking up storage
       migrate: true   # create our db table when running the app
 

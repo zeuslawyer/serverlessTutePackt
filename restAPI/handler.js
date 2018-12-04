@@ -9,7 +9,7 @@ REMOVE/ change when deploying prod version
 */
 const dynamoDb = AWS.DynamoDB.DocumentClient({
   region: "localhost",
-  endpoint: "http://localhost:8000"
+  endpoint: "http://localhost:8800"
 });
 
 module.exports.hello = async (event, context) => {
